@@ -1,0 +1,24 @@
+# 预训练模型（需从 ModelScope 下载，体积过大不适合推送）
+Qwen2.5-1.5B-Instruct/
+bge-large-zh-v1.5/
+
+# 训练产出的 checkpoint（由训练脚本自动生成）
+ckpt/
+ckpt_gpt/
+
+# 运行时生成的向量数据库（由 based_docs_qa 系列脚本生成）
+qdrant_db/
+langchain_qdrant_db/
+
+# LoRA 微调输出（由 based_docs_qa5.py / qwen2.5_1.5b_lora.py 生成）
+lora_results/
+bank_lora_model/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统文件
+.DS_Store
+Thumbs.db
